@@ -67,7 +67,7 @@ def seleccionar_personaje():
     font = pygame.font.SysFont(None, 48)
     eligiendo = True
     espacio_x = 220
-    x_inicial = 60
+    x_inicial = 100
     y_img = 120
     y_texto = y_img + 170
 
@@ -227,6 +227,7 @@ def ver_puntajes():
 
         encabezado = font.render("USUARIO    TIEMPO    PUNTAJE    ESTADO    LLAVES", True, (255, 255, 0))
         pantalla.blit(encabezado, (40, 60))
+
 
         for i, linea in enumerate(lineas[-10:]):
             render = font.render(linea.strip(), True, (255, 255, 255))
